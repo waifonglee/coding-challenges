@@ -16,7 +16,7 @@ class Solution {
                 if (height[right] > rightMax) {
                     rightMax = height[right];
                 } else {
-                    area += rightMax - height[right];
+                    area += rightMax - height[right]; //because height[left] is greater than rightMax
                 }
                 right--;
             } else {
