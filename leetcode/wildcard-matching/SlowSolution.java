@@ -22,7 +22,7 @@ class Solution {
         } else {
             boolean match = (i < s.length() && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '?'));
             
-            if (j < p.length() && p.charAt(j) == '*') {
+            if (p.charAt(j) == '*') {
                 ans = checkChar(i + 1, j, s, p) || checkChar(i + 1, j + 1, s, p) || 
                     checkChar(i, j + 1, s, p);
             } else {
