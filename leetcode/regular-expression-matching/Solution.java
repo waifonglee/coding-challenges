@@ -2,7 +2,6 @@ class Solution {
     Boolean[][] memo;
     public boolean isMatch(String s, String p) {
         memo = new Boolean[s.length() + 1][p.length() + 1];
-        
         return checkChar(0, 0, s, p);
     }
     
