@@ -7,6 +7,7 @@ public class Four {
     static String optional = "cid";
 
 /*
+didn't do part 2 because too painful :D
 If cm, the number must be at least 150 and at most 193.
 If in, the number must be at least 59 and at most 76.
 hcl (Hair Color) - a # followed by exactly six characters 0-9 or a-f.
