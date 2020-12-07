@@ -1,6 +1,7 @@
 import re
 
 containedIn = {}
+contains = {}
 TO_SEARCH = 'shiny gold'
 
 
@@ -17,8 +18,15 @@ with open('seven.txt') as f:
                 containedIn[color].add(outer)
             else:
                 containedIn[color].add(outer)
-print(containedIn)
 
+            if contains.get(outer) == None:
+                contains[outer] = list()
+                contains[outer].append([color, int(count)])
+            else:
+                contains[outer].append([color, int(count)])
+
+print(contains)
+#print(containedIn)
 
 def bfs(source):
     contains_source = set()
@@ -37,5 +45,15 @@ def bfs(source):
             continue
     return contains_source
 
+def dfs(source):
+    num = 1
+    if (contains.get(source) == None):
+        return num
+    else:
+        for bag in contains[source]:
+            num += bag[1] * dfs(bag[0])
+        return num
 
+
+print(dfs(TO_SEARCH) - 1) #minus 1 because during dfs(shiny gold), num = 1 and 1 += bag[1] * dfs(bag[0]) hence minus that
 print(len(bfs(TO_SEARCH)))
