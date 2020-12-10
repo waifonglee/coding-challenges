@@ -18,6 +18,7 @@ def p1():
 
 #print(str(p1()))
 memo = {}
+#either use global or pass the memo dict into argument
 
 def num_of_ways(i):
     global memo
