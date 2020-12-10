@@ -28,3 +28,6 @@ class Solution {
         return max;            
     }
 }
+
+//there is a better solution using 2 pointers from https://leetcode.com/problems/longest-valid-parentheses/solution/
+// O(1) space O(n) time
