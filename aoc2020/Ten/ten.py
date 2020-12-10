@@ -14,7 +14,7 @@ def p1():
         elif adapters[i + 1] - adapters[i] == 3:
             diff_three += 1
     
-    return diff_one * (diff_three + 1)
+    return diff_one * (diff_three)
 
 #print(str(p1()))
 memo = {}
