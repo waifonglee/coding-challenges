@@ -1,3 +1,4 @@
+// can prolly be faster
 class Solution {
     int[] dp;
     public int coinChange(int[] coins, int amount) {
