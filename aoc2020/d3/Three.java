@@ -1,3 +1,4 @@
+package aoc2020.d3;
 import java.util.*;
 import java.math.BigInteger; 
 import java.io.File; // Import the File class
