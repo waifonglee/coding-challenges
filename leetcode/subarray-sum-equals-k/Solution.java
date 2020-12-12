@@ -23,3 +23,7 @@ class Solution {
         return count;
     }
 }
+
+/*
+O(n^2) solution: for each element in the array, run sum of each endpoint in the arr until the end
+*/
