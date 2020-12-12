@@ -1,3 +1,4 @@
+#just loop everything ig, cant think of a faster sol
 def letterCombinations(digits):
     if len(digits) == 0:
         return []
@@ -15,7 +16,6 @@ def letterCombinations(digits):
             
     #print(prod)
     return prod
-    #for c in digits:
         
 
 
