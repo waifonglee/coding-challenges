@@ -1,5 +1,13 @@
 class Solution {
     /*
+    Given two strings word1 and word2, return the minimum number of operations required to 
+    convert word1 to word2.
+    You have the following three operations permitted on a word:
+    Insert a character
+    Delete a character
+    Replace a character
+
+    DP!!!
     Last char of word 1 = c, last char of word 2 = d
     f[i][j] = num of changes from word1[0, i) to word2[0, j)
     i.e convert first i character of word 1 to first j characters of word 2

@@ -1,5 +1,13 @@
 import java.util.*;
 
+/*
+Given an array of integers nums sorted in ascending order, 
+find the starting and ending position of a given target value.
+
+If target is not found in the array, return [-1, -1].
+
+Use binary search to find the element
+*/
 public class x {
     public static int[] searchRange(int[] nums, int target) {
         if (nums.length == 0) {

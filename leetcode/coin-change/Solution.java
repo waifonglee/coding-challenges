@@ -1,5 +1,6 @@
 // can prolly be faster
 class Solution {
+    //dp[i] = smallest num of coins to form amount i
     int[] dp;
     public int coinChange(int[] coins, int amount) {
         dp = new int[amount + 1];
