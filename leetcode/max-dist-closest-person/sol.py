@@ -28,4 +28,5 @@ class Solution:
                 maxD = max(maxD, min(j - occupied[left], occupied[right] - j))
                 
         return maxD
-                
+#i guess we can also deal with only occupied seats, 
+#i.e the largest dist comes from between occupied seats so just min (mid dist between 2 occupied seats)               
