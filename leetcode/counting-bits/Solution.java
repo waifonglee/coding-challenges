@@ -1,4 +1,6 @@
 class Solution {
+    // find num of 1s in number from 0 to num
+    
     public int[] countBits(int num) {
         int[] bits = new int[num + 1];
         for (int i = 1; i < bits.length; i ++) {
