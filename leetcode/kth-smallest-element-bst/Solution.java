@@ -15,6 +15,7 @@
  */
 //Given a binary search tree, write a function kth Smallest to find the kth smallest element in it.
 //Perform in order traversal . O(n) space. if keep track of nodes processed,  O(1) space
+//or use quickselect
 class Solution {
     int processed = 0;
     int ans = -1;
