@@ -1,3 +1,8 @@
+/*
+Given an unsorted array of integers nums, r
+eturn the length of the longest consecutive elements sequence.
+Follow up: Could you implement the O(n) solution? 
+*/
 // Very slow solution
 class Solution {
     public int longestConsecutive(int[] nums) {
@@ -45,8 +50,9 @@ class Solution {
     }
 }
 
-//Faster solution from leetcode,https://leetcode.com/problems/longest-consecutive-sequence/solution/
-//Only start searching when a number is the start of a sequence hence its O(n) linear
+// Faster solution from leetcode, 
+// https://leetcode.com/problems/longest-consecutive-sequence/solution/
+// Only start searching when a number is the start of a sequence hence its O(n) linear
 class Solution2 {
     public int longestConsecutive(int[] nums) {
         Set<Integer> num_set = new HashSet<Integer>();
