@@ -30,8 +30,8 @@ class Solution {
             return nums[0];
         }
         
-        int prev = nums[0]; // i - 1
-        int curr = Math.max(nums[1], prev); // i
+        int prev = nums[0]; // i - 2
+        int curr = Math.max(nums[1], prev); // i - 1
         
         for (int i = 2; i < nums.length; i ++) {
             int temp = curr;
