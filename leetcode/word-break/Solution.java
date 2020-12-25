@@ -12,7 +12,7 @@ class Solution {
     */
     
     public boolean wordBreak(String s, List<String> wordDict) {
-        boolean[] memo = new boolean[s.length() + 1];
+        boolean[] memo = new boolean[s.length() + 1]; 
         memo[0] = true;
         TrieNode root = new TrieNode();
         
@@ -20,7 +20,8 @@ class Solution {
             insert(word, root);
         }
         
-        //search every possible substring
+        // search every possible substring bc from i to j there could be a word, and i to k, another word 
+        // which causes different result
         for (int i = 0; i < s.length(); i ++) {
             if (!memo[i]) {
                 continue;
