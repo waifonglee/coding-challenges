@@ -4,7 +4,7 @@ class Solution {
     find the kth smallest element in the matrix.
     
     Note that it is the kth smallest element in the sorted order, not the kth distinct element.
-    
+     
     add elements from row 0 into pq. everytime we poll, we add the element from same col but + 1 the 
     row into pq. (draw it out to understand it better). only add in elements that could possibly be smaller than element polled
     */
