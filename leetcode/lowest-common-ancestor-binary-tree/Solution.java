@@ -110,7 +110,7 @@ class Solution {
         
         if (l != null && r != null) {
             return root;
-        } else if (l != null && r == null) {
+        } else if (l != null) {
             return l;
         } else {
             return r;
