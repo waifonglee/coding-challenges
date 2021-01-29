@@ -1,5 +1,3 @@
-import jdk.internal.jshell.tool.resources.l10n;
-
 class Solution {
     /*
     Given an array of non-negative integers nums, you are initially positioned at the first index of the array.
