@@ -11,7 +11,7 @@ class Solution {
 
     */
     public int longestSubsequence(int[] arr, int difference) {
-        HashMap<Integer, Integer> map = new HashMap<>(); //store longest subsequence ending from that
+        HashMap<Integer, Integer> map = new HashMap<>();
         int max = 0;
         for (int j = 0; j < arr.length; j++) {
             int num = arr[j] - difference;
